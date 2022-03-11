@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+.wrapper .page-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #303c6c;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  margin: 2em 0 1em 0;
+}
+.wrapper .page-title span {
+  color: #f4976c;
+}
+.wrapper .container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.wrapper .container .card {
+  width: 100%;
+  min-width: 250px;
+  max-width: 300px;
+  color: #303c6c;
+  background-color: #fff;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.wrapper .container .card .profile {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin: 2rem 0 1rem 0;
+  border: 0 solid #fff;
+  transition: all 0.2s ease-in-out;
+}
+.wrapper .container .card .profile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper .container .card .content {
+  padding-top: 1em;
+}
+.wrapper .container .card .content .name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  font-family: "Quicksand", sans-serif;
+}
+.wrapper .container .card .content .position {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper .container .card .social {
+  margin-bottom: 2rem;
+}
+.wrapper .container .card .social a {
+  text-decoration: none;
+  padding: 0.5em;
+  font-size: 1rem;
+  width: 2rem;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  color: #303c6c;
+}
+.wrapper .container .card .social a:hover {
+  color: #fbeba6;
+  background-color: #303c6c;
+}
+.wrapper .container .card:hover {
+  transform: scale(1.03);
+  background-color: #fbeba6;
+}
+.wrapper .container .card:hover .profile {
+  border: 0.5rem solid #f4976c;
+}
